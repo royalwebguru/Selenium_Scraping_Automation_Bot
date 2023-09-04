@@ -1,0 +1,14 @@
+[run]
+omit =
+        */tests/*
+
+include =
+        */python3_capsolver/*
+
+
+[report]
+omit =
+        */tests/*
+
+include =
+        */python3_capsolver/*

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CSS GRID</title>
+
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+        crossorigin="anonymous"
+      ></script>
+    </head>
+    <body>
+      <h1>Hello Worsdfsdfld</h1>
+
+      <button
+        class="g-recaptcha"
+        data-sitekey="reCaptcha_site_key"
+        data-callback="onSubmit"
+        data-action="register"
+      >
+        Submit
+      </button>
+
+      <button id="skip" type="button">
+        skip
+      </button>
+      <script>
+        window.addEventListener('DOMContentLoaded', async (event) => {
+          fetch('automate', {
+            mode: 'no-cors',
+          })
+          .then((res) => res.json())
+          .then((data) => {
+             const taskId = data
+               .solution.taskId;
+          })
+           .catch((error) => {
+             console.log(error);
+           });
+         })
+        </script>
+    </body>
+  </html>
